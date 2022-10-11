@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_goals_1/core/utils/constants/color_constants.dart';
 
 class GoalsAppBar extends StatelessWidget with PreferredSizeWidget {
   final String title;
@@ -8,7 +9,7 @@ class GoalsAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        backgroundColor: const Color.fromARGB(255, 22, 133, 224),
+        backgroundColor: ColorConstants.blue,
         title: Text(
           title,
         ));

@@ -10,13 +10,12 @@ class RiverpodLocation extends BeamLocation<BeamState> {
   @override
   List<BeamPage> buildPages(BuildContext context, BeamState state) {
     return [
-      if (state.routeInformation.location == WelcomePage.routeName)
-        const BeamPage(
-          name: 'welcome',
-          key: ValueKey('welcome'),
-          child: WelcomePage(),
-        )
-      else if (state.routeInformation.location == ProviderPage.routeName)
+      const BeamPage(
+        name: 'welcome',
+        key: ValueKey('welcome'),
+        child: WelcomePage(),
+      ),
+      if (state.routeInformation.location == ProviderPage.routeName)
         const BeamPage(
           name: 'provider',
           key: ValueKey('provider'),

@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_goals_1/core/utils/constants/constants.dart';
+import 'package:my_goals_1/core/utils/constants/api_constants.dart';
 import 'package:my_goals_1/features/riverpod/data/client/client.dart';
 import '../model/movie.dart';
 
